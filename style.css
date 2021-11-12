@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: azure;
+}
+
+.container {
+    padding: 1rem;
+    background-color: rgb(48, 48, 82);
+    border-radius: 1rem;
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-bar{
+    padding: 1rem;
+    width: 100%;
+    /* background-color: rgb(68, 68, 102); */
+    border-radius: 1rem;
+}
+
+.bar {
+    width: 0px;
+    height: .7rem;
+    border-radius: 1rem;
+    background-color: white;
+    animation: load 10s linear infinite;
+    animation-delay: .4s;
+}
+
+.testimonial {
+    padding: 4rem 4rem 0 4rem;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    font-size: 10rem;
+    color: rgba(240, 255, 255, .4);
+}
+
+.message {
+    margin-left: 10rem;
+    color: azure;
+    font-size: 2rem;
+    width: 80%;
+}
+
+.user {
+    display: flex;
+    color: azure;
+    align-items: center;
+    padding: 1rem;
+}
+
+.user img {
+    border-radius: 50%;
+    margin-right: 1rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.user-info {
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
